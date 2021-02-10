@@ -1,0 +1,17 @@
+Assets/
+Workspace/config.workspace
+Workspace/Files.cache
+Workspace/open_asset_manager.cmd
+Workspace/pack_assets.cmd
+Log_Output.txt
+*.opendb
+*.TMP
+*.VC.db
+*.pdb
+*.user
+.vscode/
+
+# Likely CMake build locations
+build/
+gen/
+generated/
