@@ -1,0 +1,3 @@
+[submodule "external/gemcutter"]
+	path = external/gemcutter
+	url = https://github.com/EmilianC/Gemcutter.git
