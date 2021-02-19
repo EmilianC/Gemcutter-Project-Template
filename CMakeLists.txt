@@ -17,6 +17,9 @@ project(${GAME_PROJECT_NAME} CXX)
 set(CMAKE_SUPPRESS_REGENERATION ON)
 
 add_subdirectory(external)
-add_subdirectory(source)
 
-gem_set_up_workspace("${CMAKE_CURRENT_LIST_DIR}/workspace/")
+gem_set_up_workspace("${CMAKE_CURRENT_LIST_DIR}/workspace/"
+    PACK_TARGET ASSETS
+)
+
+add_subdirectory(source)

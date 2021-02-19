@@ -11,6 +11,7 @@ source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${gemcutter_game_files})
 configure_file("${CMAKE_CURRENT_LIST_DIR}/main.cpp" "${CMAKE_CURRENT_LIST_DIR}/main.cpp")
 
 add_executable(${GAME_PROJECT_NAME} WIN32 ${gemcutter_game_files})
+add_dependencies(${GAME_PROJECT_NAME} ASSETS)
 sf_target_compile_warnings(${GAME_PROJECT_NAME})
 sf_target_compile_warnings_as_errors(${GAME_PROJECT_NAME} OPTIONAL)
 
