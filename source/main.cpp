@@ -31,7 +31,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 	config.SetDefaultValue("openGL_Minor", 3);
 	config.SetDefaultValue("updatesPerSecond", 120);
 	config.SetDefaultValue("FPSCap", 120);
-	config.SetDefaultValue("MSAA", 1);
 	config.SetDefaultValue("vsync", "off");
 	config.SetDefaultValue("asset_directory", "./");
 
