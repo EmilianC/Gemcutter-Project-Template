@@ -13,9 +13,6 @@ option(GAME_PROJECT_NAME "The name of the game.")
 
 project(${GAME_PROJECT_NAME} CXX)
 
-# Omit ZERO_CHECK target.
-set(CMAKE_SUPPRESS_REGENERATION ON)
-
 add_subdirectory(external)
 
 gem_set_up_workspace("${CMAKE_CURRENT_LIST_DIR}/workspace/"
@@ -23,3 +20,4 @@ gem_set_up_workspace("${CMAKE_CURRENT_LIST_DIR}/workspace/"
 )
 
 add_subdirectory(source)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${GAME_PROJECT_NAME})
