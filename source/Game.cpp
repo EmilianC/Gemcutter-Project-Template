@@ -83,5 +83,6 @@ void Game::Draw()
 	ClearBackBuffer();
 
 	// Render the scene starting from the root entity.
-	mainRenderPass.Render(*root);
+	mainRenderPass.Bind();
+	mainRenderPass.RenderRoot(*root);
 }
