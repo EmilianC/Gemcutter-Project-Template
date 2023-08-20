@@ -1,9 +1,9 @@
 #include <gemcutter/Application/Application.h>
 #include <gemcutter/Application/Logging.h>
+#include <gemcutter/Application/Reflection.h>
 #include <gemcutter/Rendering/Primitives.h>
 #include <gemcutter/Rendering/Rendering.h>
 #include <gemcutter/Resource/ConfigTable.h>
-#include <gemcutter/Resource/Resource.h>
 #include <gemcutter/Sound/SoundSystem.h>
 #include <gemcutter/Utilities/Random.h>
 #include <Windows.h>
@@ -21,6 +21,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine,
 #endif
 
 	Log("-Started Execution-");
+	InitializeReflectionTables();
 
 	/* Register default configuration values */
 	ConfigTable config;
