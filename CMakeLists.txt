@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.20)
 
 # Set supported platform and binary output directory.
 set(CMAKE_GENERATOR_PLATFORM Win32)
