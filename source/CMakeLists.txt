@@ -22,3 +22,38 @@ set_target_properties(${GAME_PROJECT_NAME} PROPERTIES
 )
 
 target_link_libraries(${GAME_PROJECT_NAME} PUBLIC gemcutter)
+
+target_precompile_headers(${GAME_PROJECT_NAME}
+	PRIVATE
+		<algorithm>
+		<array>
+		<cstddef>
+		<cstdint>
+		<cstring>
+		<fstream>
+		<functional>
+		<map>
+		<memory>
+		<numeric>
+		<optional>
+		<queue>
+		<span>
+		<string_view>
+		<string>
+		<type_traits>
+		<unordered_map>
+		<vector>
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Application/FileSystem.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Application/Logging.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Application/Reflection.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Entity/Entity.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/GUI/Widget.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Math/Matrix.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Math/Quaternion.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Math/Transform.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Math/Vector.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Resource/Shareable.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Utilities/Meta.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Utilities/Random.h
+		${CMAKE_SOURCE_DIR}/external/gemcutter/gemcutter/Utilities/ScopeGuard.h
+)

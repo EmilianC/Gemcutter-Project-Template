@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
 
-# Set supported platform and binary output directory.
-set(CMAKE_GENERATOR_PLATFORM Win32)
-set(CMAKE_VS_PLATFORM_NAME Win32)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 # Detect a reasonable project name from the current folder.
